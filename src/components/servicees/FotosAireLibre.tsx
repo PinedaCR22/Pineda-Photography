@@ -1,0 +1,108 @@
+import Navbar from "../../layout/Navbar";
+
+const FotosAireLibre = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Espacio entre el navbar y el contenido */}
+      <div className="h-20"></div>
+
+      {/* Contenido de la página */}
+      <div className="w-full flex flex-col items-center py-16 px-8">
+        
+        {/* Card 1 - Introducción */}
+        <div className="w-full flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6">
+          {/* Imagen a la izquierda */}
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img 
+              src="/images/airelibre-intro.jpg" 
+              alt="Fotografía al Aire Libre: Captura la Belleza Natural" 
+              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
+            />
+          </div>
+          {/* Texto a la derecha */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Fotografía al Aire Libre: Captura la Belleza Natural
+            </h2>
+            <p className="text-lg text-gray-700">
+              Las sesiones de fotos al aire libre son perfectas para capturar la esencia de la naturaleza 
+              y la espontaneidad de cada persona. En Pineda Photography nos especializamos en aprovechar 
+              la luz natural y los paisajes más impresionantes para crear imágenes vibrantes y memorables.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              Ofrecemos sesiones en bosques, playas, montañas, parques y cualquier entorno natural 
+              que resalte la personalidad y el estilo de nuestros clientes.
+            </p>
+          </div>
+        </div>
+
+        {/* Espaciado entre cards */}
+        <div className="h-10"></div>
+
+        {/* Card 2 - ¿Qué incluye nuestro servicio? */}
+        <div className="w-full flex flex-col md:flex-row-reverse items-center bg-white shadow-lg rounded-lg p-6">
+          {/* Imagen a la derecha */}
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img 
+              src="/images/airelibre-incluye.jpg" 
+              alt="¿Qué incluye nuestro servicio?" 
+              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
+            />
+          </div>
+          {/* Texto a la izquierda */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              ¿Qué incluye nuestro servicio?
+            </h2>
+            <p className="text-lg text-gray-700">
+              Nuestras sesiones de fotos al aire libre incluyen asesoramiento en locaciones, 
+              dirección de poses y edición profesional de imágenes. Nos aseguramos de que cada 
+              fotografía capture la magia del entorno y la esencia de nuestros clientes.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              Además, ofrecemos opciones de vestuario recomendado, combinaciones de colores 
+              para el fondo y sugerencias de horario para obtener la mejor iluminación natural.
+            </p>
+          </div>
+        </div>
+
+        {/* Espaciado entre cards */}
+        <div className="h-10"></div>
+
+        {/* Card 3 - Precios */}
+        <div className="w-full flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6">
+          {/* Imagen a la izquierda */}
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img 
+              src="/images/airelibre-precios.jpg" 
+              alt="Precios y Paquetes" 
+              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
+            />
+          </div>
+          {/* Texto a la derecha */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Precios y Paquetes
+            </h2>
+            <p className="text-lg text-gray-700">
+              Nuestros paquetes comienzan en **₡80,000** e incluyen una sesión de una hora en la locación 
+              elegida, edición profesional y entrega de un álbum digital con las mejores fotos.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              También ofrecemos paquetes con sesiones más largas, múltiples locaciones y la posibilidad 
+              de obtener impresiones en alta calidad.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              Contáctanos y crea un recuerdo inolvidable en el escenario natural perfecto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FotosAireLibre;
