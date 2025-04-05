@@ -7,7 +7,7 @@ const Contact = () => {
         className="w-11/12 max-w-lg md:max-w-xl lg:max-w-2xl"
       />
       <p className="text-gray-700 text-lg mt-4">
-        Estamos trabajando en esta sección. ¡Pronto estará disponible!
+        Estamos trabajando en esta sección. Prueba de commit a main
       </p>
     </div>
   );
