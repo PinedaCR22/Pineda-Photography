@@ -1,5 +1,3 @@
-import React from 'react';
-
 const VideoSection = () => {
   return (
     <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] bg-black overflow-hidden">
