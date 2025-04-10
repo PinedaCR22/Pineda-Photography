@@ -11,12 +11,12 @@ const ProductionSelection = () => {
   ];
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col justify-center items-center">
-      {/* Imagen de fondo */}
+    <div className="relative w-full min-h-screen flex flex-col justify-center items-center pt-16">
+      {/* Imagen de fondo usando PORTADA.jpg */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/collage-con-5-fotos-top.png')",
+          backgroundImage: "url('/images/PORTADA.jpg')",
           filter: "blur(6px)",
           zIndex: 0,
         }}
@@ -24,8 +24,8 @@ const ProductionSelection = () => {
 
       {/* Contenedor de selección */}
       <div className="relative z-10 bg-white bg-opacity-95 p-8 rounded-lg shadow-lg w-11/12 max-w-3xl text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">
-          Seleccione el tipo de producción de interés(INFORMACIÓN GENÉRICA)
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+          Seleccione el tipo de producción de interés (INFORMACIÓN GENÉRICA)
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {productions.map((production, index) => (

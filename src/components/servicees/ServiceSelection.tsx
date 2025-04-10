@@ -11,15 +11,15 @@ const ServiceSelection = () => {
         { name: "Boda", path: "/services/boda" },
         { name: "15 años", path: "/services/quince-años" },
         { name: "Cenas", path: "/services/cenas" },
-        { name: "Baby Shower", path: "/services/baby-shower" }
-      ]
+        { name: "Baby Shower", path: "/services/baby-shower" },
+      ],
     },
     {
       title: "Sesiones",
       services: [
         { name: "Fotos al aire libre", path: "/services/fotos-aire-libre" },
-        { name: "Fotos tipo estudio", path: "/services/fotos-estudio" }
-      ]
+        { name: "Fotos tipo estudio", path: "/services/fotos-estudio" },
+      ],
     },
     {
       title: "Otros",
@@ -27,19 +27,18 @@ const ServiceSelection = () => {
         { name: "Graduaciones", path: "/services/graduaciones" },
         { name: "Deportivas", path: "/services/deportivas" },
         { name: "Certámenes de belleza", path: "/services/certamenes-belleza" },
-        { name: "Tomas a propiedades", path: "/services/tomas-propiedades" }
-      ]
-    }
+        { name: "Tomas a propiedades", path: "/services/tomas-propiedades" },
+      ],
+    },
   ];
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col justify-center items-center">
-      
-      {/* Imagen de fondo */}
+    <div className="relative w-full min-h-screen flex flex-col justify-center items-center pt-16">
+      {/* Imagen de fondo usando PORTADA.jpg */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/collage-con-5-fotos-top.png')",
+          backgroundImage: "url('/images/PORTADA.jpg')",
           filter: "blur(6px)",
           zIndex: 0,
         }}
@@ -51,18 +50,18 @@ const ServiceSelection = () => {
           Seleccione su servicio de interés (INFORMACIÓN GENÉRICA)
         </h2>
 
-        {/* Renderizar cada categoría */}
+        {/* Renderizado de cada categoría */}
         {serviceCategories.map((category, categoryIndex) => (
           <div key={categoryIndex} className="mb-8">
             {/* Título de la categoría */}
             <h3 className="text-2xl font-semibold text-gray-800 mb-3">
               {category.title}
             </h3>
-            
+
             {/* Línea divisoria */}
             <div className="w-32 h-1 bg-yellow-600 mx-auto mb-4"></div>
-            
-            {/* Contenedor de botones con estructura condicional */}
+
+            {/* Contenedor de botones */}
             <div
               className={`${
                 category.title === "Sesiones"
@@ -80,8 +79,8 @@ const ServiceSelection = () => {
                 </button>
               ))}
             </div>
-            
-            {/* No mostrar margen después de la última categoría */}
+
+            {/* Margen inferior para separar categorías, excepto en la última */}
             {categoryIndex < serviceCategories.length - 1 && (
               <div className="mt-8"></div>
             )}
