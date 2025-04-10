@@ -13,6 +13,7 @@ const VideoSection = () => {
         }}
       ></div>
 
+
       {/* Contenedor del texto con fondo semitransparente */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10 px-4">
         <div className="bg-black bg-opacity-50 p-6 rounded-md max-w-2xl mx-auto">
