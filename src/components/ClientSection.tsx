@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 import Slider from "react-slick";
+import { FaCamera, FaPhotoVideo, FaCalendarAlt } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ClientSection = () => {
-  // Configuración para el primer carrusel (movimiento hacia la derecha)
   const settingsRight = {
     dots: false,
     infinite: true,
@@ -17,22 +17,11 @@ const ClientSection = () => {
     pauseOnHover: false,
     arrows: false,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-        }
-      }
+      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+      { breakpoint: 600, settings: { slidesToShow: 2 } }
     ]
   };
 
-  // Configuración para el segundo carrusel (movimiento hacia la izquierda)
   const settingsLeft = {
     dots: false,
     infinite: true,
@@ -42,26 +31,15 @@ const ClientSection = () => {
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
-    rtl: true, // Movimiento de derecha a izquierda
+    rtl: true,
     pauseOnHover: false,
     arrows: false,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-        }
-      }
+      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+      { breakpoint: 600, settings: { slidesToShow: 2 } }
     ]
   };
 
-  // Array de los primeros 10 clientes para el primer carrusel
   const clientsRow1 = [
     { id: 1, name: "FOTOGRAFIARTE.CR", image: "/images/clients/fotografiarte.jpg" },
     { id: 2, name: "Raices Restaurante", image: "/images/clients/raices.jpg" },
@@ -75,7 +53,6 @@ const ClientSection = () => {
     { id: 10, name: "Comité de Cultura", image: "/images/clients/comite.jpg" }
   ];
 
-  // Array de los siguientes 10 clientes para el segundo carrusel
   const clientsRow2 = [
     { id: 11, name: "Hacienda El Viejo", image: "/images/clients/hacienda.jpg" },
     { id: 12, name: "Xirena", image: "/images/clients/xirena.jpg" },
@@ -91,24 +68,33 @@ const ClientSection = () => {
 
   return (
     <div className="w-full flex flex-col items-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      
-      {/* Sección superior - Card con botones y Colaboradores */}
+
+      {/* Sección superior */}
       <div className="w-full flex flex-col lg:flex-row gap-8 mb-12">
         
-        {/* Card izquierda - Botones de navegación agrupados */}
+        {/* Card izquierda */}
         <div className="w-full lg:w-1/2 bg-white rounded-xl shadow-lg p-6">
           <div className="flex flex-col items-center text-center">
+
+            {/* ÍCONOS Y TÍTULO #1 */}
+            <div className="flex flex-row gap-4 justify-center mb-2">
+              <FaCamera className="text-yellow-600 text-4xl" />
+              <FaPhotoVideo className="text-yellow-600 text-4xl" />
+            </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               ¡Entérate de todo lo que ofrecemos para ti!
             </h2>
-            
-            <div className="flex flex-row justify-center gap-4 mb-8">
+
+            <div className="flex flex-row justify-center gap-4 mb-8 flex-wrap">
+              {/* Botón Servicios (sin ícono) */}
               <Link
                 to="/services"
                 className="bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black hover:border-2 hover:border-yellow-400 transition duration-300 text-center min-w-[150px]"
               >
                 Servicios
               </Link>
+
+              {/* Botón Producciones (sin ícono) */}
               <Link
                 to="/productions"
                 className="bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black hover:border-2 hover:border-yellow-400 transition duration-300 text-center min-w-[150px]"
@@ -117,23 +103,26 @@ const ClientSection = () => {
               </Link>
             </div>
 
+            {/* ÍCONO Y TÍTULO #2 (Contacto) */}
+            <FaCalendarAlt className="text-yellow-600 text-4xl mb-2" />
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-4 mb-6">
               ¡Ponte en contacto con nosotros y reserva tu servicio!
             </h2>
-            
+
+            {/* Botón Contacto (sin ícono) */}
             <Link
               to="/contact"
-              className="bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black hover:border-2 hover:border-yellow-400 transition duration-300 text-center min-w-[150px]"
+              className="bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black hover:border-2 hover:border-yellow-400 transition duration-300 text-center min-w-[150px] mt-4"
             >
               Contacto
             </Link>
           </div>
         </div>
 
-        {/* Card derecha - Colaboradores */}
+        {/* Card derecha */}
         <div className="w-full lg:w-1/2">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
-          ¡Nuestros colaboradores!
+            ¡Nuestros colaboradores!
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Colaborador 1 */}
@@ -186,26 +175,25 @@ const ClientSection = () => {
         </div>
       </div>
 
-      {/* Sección inferior - Empresas con las que hemos trabajado (Carruseles) */}
+      {/* Carruseles */}
       <div className="w-full mt-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
-        ¡Empresas con las que hemos trabajado!
+          ¡Empresas con las que hemos trabajado!
         </h2>
-        
-        {/* Primer carrusel - Movimiento hacia la derecha */}
+
         <div className="mb-8 overflow-hidden">
           <Slider {...settingsRight}>
             {clientsRow1.map((client) => (
               <div key={client.id} className="px-2">
                 <div className="bg-white p-4 rounded-lg shadow-md flex items-center justify-center h-24 w-40 mx-auto">
-                  <img 
-                    src={client.image} 
-                    alt={client.name} 
+                  <img
+                    src={client.image}
+                    alt={client.name}
                     className="max-h-full max-w-full object-contain"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.onerror = null;
-                      target.src = "/images/logo-placeholder.png"; // Imagen de respaldo si hay error
+                      target.src = "/images/logo-placeholder.png";
                     }}
                   />
                 </div>
@@ -213,21 +201,20 @@ const ClientSection = () => {
             ))}
           </Slider>
         </div>
-        
-        {/* Segundo carrusel - Movimiento hacia la izquierda */}
+
         <div className="overflow-hidden">
           <Slider {...settingsLeft}>
             {clientsRow2.map((client) => (
               <div key={client.id} className="px-2">
                 <div className="bg-white p-4 rounded-lg shadow-md flex items-center justify-center h-24 w-40 mx-auto">
-                  <img 
-                    src={client.image} 
-                    alt={client.name} 
+                  <img
+                    src={client.image}
+                    alt={client.name}
                     className="max-h-full max-w-full object-contain"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.onerror = null;
-                      target.src = "/images/logo-placeholder.png"; // Imagen de respaldo si hay error
+                      target.src = "/images/logo-placeholder.png";
                     }}
                   />
                 </div>
