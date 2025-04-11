@@ -1,4 +1,3 @@
-
 const VideoSection = () => {
   return (
     <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] bg-black overflow-hidden mt-16">
@@ -13,10 +12,9 @@ const VideoSection = () => {
         }}
       ></div>
 
-
       {/* Contenedor del texto con fondo semitransparente */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10 px-4">
-        <div className="bg-black bg-opacity-50 p-6 rounded-md max-w-2xl mx-auto">
+        <div className="bg-black/30 p-6 rounded-md max-w-2xl mx-auto">
           <h1 className="text-white text-3xl md:text-5xl font-bold">
             Bienvenidos al sitio web oficial de Pineda Photography
           </h1>

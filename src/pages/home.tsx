@@ -1,7 +1,8 @@
 import VideoSection from "../components/VideoSection";
 import AboutUs from "../components/AboutUs";
 import PhotoCarousel from "../components/PhotoCarousel";
-import ClientSection from "../components/ClientSection"; // Importa la nueva sección
+import ClientSection from "../components/ClientSection";
+import LogrosSection from "../components/LogrosSection";
 
 const Home = () => {
   return (
@@ -24,8 +25,14 @@ const Home = () => {
       {/* Espacio entre secciones */}
       <div className="h-12"></div>
 
-      {/* Nueva Sección "Clientes con los que hemos trabajado" */}
+      {/* Sección "Clientes con los que hemos trabajado" */}
       <ClientSection />
+
+      {/* Espacio entre secciones */}
+      <div className="h-12"></div>
+
+      {/* Sección "Logros Audiovisuales" */}
+      <LogrosSection />
     </div>
   );
 };
