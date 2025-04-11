@@ -25,7 +25,7 @@ const ProductionSelection = () => {
       {/* Contenedor de selección */}
       <div className="relative z-10 bg-white bg-opacity-95 p-8 rounded-lg shadow-lg w-11/12 max-w-3xl text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
-          Seleccione el tipo de producción de interés (INFORMACIÓN GENÉRICA)
+          Seleccione el tipo de producción de interés
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {productions.map((production, index) => (

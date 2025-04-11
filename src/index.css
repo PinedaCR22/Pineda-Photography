@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+/* En tu archivo global.css o Tailwind */
+.perspective {
+    perspective: 1000px;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .rotateY-180 {
+    transform: rotateY(180deg);
+  }
+  
