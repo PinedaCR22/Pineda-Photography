@@ -17,7 +17,7 @@ const FotosAireLibre = () => {
           {/* Imagen a la izquierda */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img 
-              src="/images/airelibre-intro.jpg" 
+              src="/images/servicios/SERVICE1.jpg" 
               alt="Fotografía al Aire Libre: Captura la Belleza Natural" 
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
@@ -47,7 +47,7 @@ const FotosAireLibre = () => {
           {/* Imagen a la derecha */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img 
-              src="/images/airelibre-incluye.jpg" 
+              src="/images/servicios/SERVICE2.jpg" 
               alt="¿Qué incluye nuestro servicio?" 
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
@@ -63,8 +63,8 @@ const FotosAireLibre = () => {
               fotografía capture la magia del entorno y la esencia de nuestros clientes.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Además, ofrecemos opciones de vestuario recomendado, combinaciones de colores 
-              para el fondo y sugerencias de horario para obtener la mejor iluminación natural.
+              Además, ofrecemos sugerencias de horario para obtener la mejor iluminación ya sea natural
+              o artificial mediante equipo profesional.
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ const FotosAireLibre = () => {
           {/* Imagen a la izquierda */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img 
-              src="/images/airelibre-precios.jpg" 
+              src="/images/servicios/SERVICE3.jpg" 
               alt="Precios y Paquetes" 
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
@@ -88,15 +88,16 @@ const FotosAireLibre = () => {
               Precios y Paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              Nuestros paquetes comienzan en **₡80,000** e incluyen una sesión de una hora en la locación 
-              elegida, edición profesional y entrega de un álbum digital con las mejores fotos.
+              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              También ofrecemos paquetes con sesiones más largas, múltiples locaciones y la posibilidad 
-              de obtener impresiones en alta calidad.
+              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Contáctanos y crea un recuerdo inolvidable en el escenario natural perfecto.
+              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
             </p>
           </div>
         </div>

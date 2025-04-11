@@ -17,7 +17,7 @@ const FotosEstudio = () => {
           {/* Imagen a la izquierda */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img 
-              src="/images/estudio-intro.jpg" 
+              src="/images/servicios/EST3.jpg" 
               alt="Fotografía de Estudio: Captura Profesional y Elegante" 
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
@@ -47,7 +47,7 @@ const FotosEstudio = () => {
           {/* Imagen a la derecha */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img 
-              src="/images/estudio-incluye.jpg" 
+              src="/images/servicios/EST2.jpg" 
               alt="¿Qué incluye nuestro servicio?" 
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
@@ -59,8 +59,7 @@ const FotosEstudio = () => {
             </h2>
             <p className="text-lg text-gray-700">
               Nuestro servicio de fotografía en estudio incluye iluminación profesional, 
-              fondos personalizados y dirección para cada sesión. 
-              Nos aseguramos de que cada imagen refleje la esencia del cliente y se vea impecable.
+              fondos personalizados color negro, blanco y rojo vino, el estudio se encuentra ubicado en Santa Cruz pero podemos movilizar el estudio si así el cliente lo desea. 
             </p>
             <p className="text-lg text-gray-700 mt-4">
               También ofrecemos asesoría sobre vestuario y poses, garantizando un resultado 
@@ -77,7 +76,7 @@ const FotosEstudio = () => {
           {/* Imagen a la izquierda */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img 
-              src="/images/estudio-precios.jpg" 
+              src="/images/servicios/EST1.jpg" 
               alt="Precios y Paquetes" 
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
@@ -88,15 +87,16 @@ const FotosEstudio = () => {
               Precios y Paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              Nuestros paquetes inician en **₡70,000**, incluyendo una sesión de 45 minutos, 
-              edición profesional y un álbum digital con las mejores fotografías seleccionadas.
+              <strong>Paquete 1 (20,000₡):</strong> Incluye 1 hora de sesión fotográfica y 10 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              También contamos con opciones de sesiones extendidas, 
-              cambios de vestuario y álbumes impresos personalizados.
+              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 15 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Contáctanos y reserva tu sesión para obtener imágenes de alta calidad en un ambiente profesional.
+              <strong>Paquete 3 (35,000₡):</strong> Incluye 2 hora de sesión fotográfica y 30 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Nota:</strong> Estos precios aplican en nuestro estudio ubicado en Santa Cruz Guanacaste, sin embargo como hemos mencionado por un precio adicional podemos llevar el estudio al lugar de interés del cliente.
             </p>
           </div>
         </div>
