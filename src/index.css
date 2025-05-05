@@ -14,3 +14,45 @@
     transform: rotateY(180deg);
   }
   
+/* === OVERRIDES para react-datepicker === */
+
+/* Que el contenedor ocupe 100% de ancho */
+.react-datepicker__month-container {
+  width: 100% !important;
+}
+
+/* Que el grid de días tenga 7 columnas iguales */
+.react-datepicker__month {
+  display: grid !important;
+  grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+}
+
+/* Cabeceras de días (“LU MA MI…”) */
+.react-datepicker__day-names {
+  display: grid !important;
+  grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+  margin: 0;
+  padding: 0 0.75rem; /* coincide con p-3 de tu calendarClassName */
+}
+.react-datepicker__day-name {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #4B5563; /* gray-600 */
+}
+
+/* Filas de días sin alterar */
+.react-datepicker__week {
+  display: contents !important;
+}
+
+/* Cada celda de día centrada y cuadrada */
+.react-datepicker__day {
+  margin: 0 !important;
+  width: auto !important;
+  aspect-ratio: 1 / 1 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
