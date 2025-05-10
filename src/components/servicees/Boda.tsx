@@ -24,7 +24,7 @@ const Boda = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Capturamos tu Gran Día con Elegancia
+              Capturamos tu gran día con elegancia
             </h2>
             <p className="text-lg text-gray-700">
               En Pineda Photography entendemos que tu boda es un evento único e irrepetible. 
@@ -56,8 +56,8 @@ const Boda = () => {
               ¿Qué incluye nuestro servicio?
             </h2>
             <p className="text-lg text-gray-700">
-              Nuestro servicio de fotografía de bodas incluye sesiones previas, cobertura completa del evento, 
-              sesiones post-boda y un álbum digital con edición profesional. Nos aseguramos de capturar cada momento clave 
+              Nuestro servicio de fotografía de bodas incluye sesiones previas, cobertura completa del evento y 
+              sesiones post-boda. Nos aseguramos de capturar cada momento clave 
               con una calidad excepcional.
             </p>
             <p className="text-lg text-gray-700 mt-4">
@@ -81,22 +81,22 @@ const Boda = () => {
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
-          {/* Texto a la derecha */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+                    {/* Texto a la derecha */}
+                    <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Precios y Paquetes
+              Precios y paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              Ofrecemos paquetes adaptados a cada necesidad. Los precios varían dependiendo de la duración de la cobertura, 
-              la cantidad de fotos entregadas y los extras como video y sesiones adicionales. 
+              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Nuestros paquetes inician en **₡200,000** e incluyen una cantidad base de fotografías editadas. 
-              Para opciones más completas, contamos con paquetes personalizados que incluyen álbumes físicos, 
-              sesiones adicionales y cobertura de todo el evento con múltiples fotógrafos.
+              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              No dudes en consultarnos para diseñar un paquete que se ajuste a tus necesidades y presupuesto.
+              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
             </p>
           </div>
         </div>

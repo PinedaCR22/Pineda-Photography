@@ -25,7 +25,7 @@ const Graduaciones = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Inmortaliza tu Gran Logro
+              Inmortaliza tu gran logro
             </h2>
             <p className="text-lg text-gray-700">
               La graduación es un momento único que marca el inicio de una nueva etapa. 
@@ -81,18 +81,22 @@ const Graduaciones = () => {
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
-          {/* Texto a la derecha */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+                    {/* Texto a la derecha */}
+                    <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Precios y Paquetes
+              Precios y paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              Contamos con paquetes desde **₡100,000** para sesiones individuales, 
-              y opciones para sesiones grupales con descuentos especiales. 
+              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              También ofrecemos paquetes premium que incluyen sesiones en exteriores, álbumes digitales 
-              y fotografías impresas en alta calidad. Contáctanos para conocer las mejores opciones para ti.
+              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
             </p>
           </div>
         </div>

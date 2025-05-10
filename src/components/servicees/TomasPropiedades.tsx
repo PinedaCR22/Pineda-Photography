@@ -25,7 +25,7 @@ const TomasPropiedades = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Fotografía Profesional para Propiedades
+              Fotografía profesional para propiedades
             </h2>
             <p className="text-lg text-gray-700">
               La presentación visual de una propiedad es clave para atraer compradores o inquilinos. 
@@ -81,21 +81,22 @@ const TomasPropiedades = () => {
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
-          {/* Texto a la derecha */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+                    {/* Texto a la derecha */}
+                    <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Precios y Paquetes
+              Precios y paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              Los paquetes de fotografía inmobiliaria comienzan en **₡80,000**, 
-              con opciones de tomas detalladas de cada área de la propiedad y vistas aéreas opcionales.
+              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Para inmobiliarias y proyectos de gran escala, ofrecemos paquetes de cobertura completa 
-              con material digital optimizado para redes sociales y plataformas de venta de propiedades.
+              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Contáctanos para personalizar un servicio a la medida de tu propiedad y atraer más clientes.
+              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
             </p>
           </div>
         </div>

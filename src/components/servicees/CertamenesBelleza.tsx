@@ -25,12 +25,12 @@ const CertamenesBelleza = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Fotografía para Certámenes de Belleza
+              Fotografía para certámenes de belleza
             </h2>
             <p className="text-lg text-gray-700">
               Los certámenes de belleza requieren un enfoque profesional para capturar la elegancia, 
-              la confianza y la personalidad de cada participante. 
-              En Pineda Photography nos especializamos en destacar lo mejor de cada concursante.
+              la confianza y la personalidad de cada candidata. 
+              En Pineda Photography nos especializamos en destacar lo mejor de cada una de ellas.
             </p>
             <p className="text-lg text-gray-700 mt-4">
               Contamos con experiencia en la cobertura de desfiles, sesiones previas y fotografía de gala, 
@@ -58,11 +58,11 @@ const CertamenesBelleza = () => {
               ¿Qué incluye nuestro servicio?
             </h2>
             <p className="text-lg text-gray-700">
-              Nuestro servicio incluye fotografía de pasarela, retratos individuales, 
+              Nuestro servicio incluye fotografías de modelaje, retratos individuales, 
               sesiones en estudio o exteriores y cobertura completa del certamen.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Ofrecemos edición profesional para garantizar imágenes impactantes, listas para redes sociales, 
+              Ofrecemos edición profesional para garantizar imágenes profesionales, listas para redes sociales, 
               portafolios o material publicitario.
             </p>
           </div>
@@ -81,21 +81,22 @@ const CertamenesBelleza = () => {
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
-          {/* Texto a la derecha */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+                    {/* Texto a la derecha */}
+                    <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Precios y Paquetes
+              Precios y paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              Ofrecemos paquetes personalizados a partir de **₡120,000**, 
-              con opciones para cobertura completa, sesiones individuales o fotografía editorial de los concursantes.
+              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Además, brindamos paquetes de retratos exclusivos para concursantes 
-              que desean imágenes impactantes antes del evento.
+              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Consulta nuestras opciones y agenda tu sesión para destacar en el certamen.
+              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
             </p>
           </div>
         </div>
