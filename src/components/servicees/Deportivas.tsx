@@ -25,12 +25,12 @@ const FotosDeportivas = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Fotografía Deportiva: Captura la Intensidad del Momento
+              Fotografía Deportiva: Captura la intensidad del momento
             </h2>
             <p className="text-lg text-gray-700">
               En la fotografía deportiva, cada fracción de segundo cuenta. 
               Nos especializamos en capturar la acción en su máximo esplendor, 
-              inmortalizando la velocidad, la emoción y la determinación de cada atleta.
+              inmortalizando la velocidad, la emoción y la determinación de cada deportista.
             </p>
             <p className="text-lg text-gray-700 mt-4">
               Ya sea en un partido, una competencia o un entrenamiento, 
@@ -83,21 +83,22 @@ const FotosDeportivas = () => {
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
-          {/* Texto a la derecha */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+                    {/* Texto a la derecha */}
+                    <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Precios y Paquetes
+              Precios y paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              Nuestros paquetes comienzan en **₡100,000**, cubriendo eventos deportivos de hasta 2 horas, 
-              con entrega digital de imágenes editadas profesionalmente.
+              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              También ofrecemos opciones de cobertura extendida, álbumes impresos y sesiones personalizadas 
-              para equipos y atletas destacados.
+              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              ¡Captura cada momento de gloria y emoción con Pineda Photography!
+              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
             </p>
           </div>
         </div>

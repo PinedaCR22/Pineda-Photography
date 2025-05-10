@@ -18,6 +18,7 @@ import Publicidad from "./components/production/Publicidad";
 import Audiovisual from "./components/production/Audiovisual";
 import Turistico from "./components/production/Turístico";
 import Reels from "./components/production/Reels";
+import Cenas from "./components/servicees/Cenas";
 
 
 const AppRoutes = () => {
@@ -41,6 +42,7 @@ const AppRoutes = () => {
         <Route path="/services/deportivas" element={<Deportivas />} />
         <Route path="/services/certamenes-belleza" element={<CertamenesBelleza />} />
         <Route path="/services/tomas-propiedades" element={<TomasPropiedades />} />
+        <Route path="/services/cenas" element={<Cenas />} />
 
         {/* Rutas de Producciones */}
         <Route path="/productions/publicidad" element={<Publicidad />} />

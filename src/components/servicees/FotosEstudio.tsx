@@ -25,7 +25,7 @@ const FotosEstudio = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Fotografía de Estudio: Captura Profesional y Elegante
+              Fotografía de Estudio: Captura profesional y elegante
             </h2>
             <p className="text-lg text-gray-700">
               Las sesiones de fotos en estudio permiten capturar imágenes con una iluminación controlada y 
@@ -84,7 +84,7 @@ const FotosEstudio = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Precios y Paquetes
+              Precios y paquetes
             </h2>
             <p className="text-lg text-gray-700">
               <strong>Paquete 1 (20,000₡):</strong> Incluye 1 hora de sesión fotográfica y 10 fotografías editadas en alta resolución.

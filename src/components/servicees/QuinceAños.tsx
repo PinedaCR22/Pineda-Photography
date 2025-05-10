@@ -25,7 +25,7 @@ const QuinceAnios = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Celebra tus Quince Años con Magia
+              Celebra tus 15 años con magia
             </h2>
             <p className="text-lg text-gray-700">
               En Pineda Photography capturamos la esencia de este día tan especial. 
@@ -58,7 +58,7 @@ const QuinceAnios = () => {
             </h2>
             <p className="text-lg text-gray-700">
               Nuestro paquete de fotografía para quince años incluye sesiones previas, 
-              cobertura del evento, álbum digital y edición profesional de imágenes.
+              cobertura total del evento y edición profesional de imágenes.
             </p>
             <p className="text-lg text-gray-700 mt-4">
               También ofrecemos asesoramiento en poses y locaciones, asegurando que cada 
@@ -80,18 +80,22 @@ const QuinceAnios = () => {
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
-          {/* Texto a la derecha */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+                    {/* Texto a la derecha */}
+                    <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Precios y Paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              Contamos con paquetes adaptados a cada necesidad. Desde **₡150,000** hasta opciones premium que incluyen 
-              sesiones en exteriores, videos y álbumes personalizados.
+              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Para conocer más sobre nuestros paquetes y opciones adicionales, 
-              contáctanos y diseñaremos el plan perfecto para ti.
+              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+            </p>
+            <p className="text-lg text-gray-700 mt-4">
+              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
             </p>
           </div>
         </div>

@@ -76,7 +76,7 @@ export const Calendar: React.FC<CalendarProps> = ({
           Cancelar
         </button>
         <button onClick={() => tempDate && onDateConfirm(tempDate)}
-   className="px-3 py-1 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition" >  Seleccionar</button>
+   className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition" >  Seleccionar</button>
       </div>
     </div>
   );
