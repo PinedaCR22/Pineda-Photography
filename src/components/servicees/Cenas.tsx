@@ -81,13 +81,13 @@ const Cenas = () => {
               Precios y paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              <strong>Paquete Básico (20,000₡):</strong> 1 hora de cobertura y 20 fotos editadas en alta resolución.
+              <strong>Paquete 1 (100,000₡):</strong> Incluye la cobertura total del evento de graduación, entregando la totalidad de fotografías realizadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              <strong>Paquete Plus (35,000₡):</strong> 2 horas de cobertura y 35 fotos editadas.
+              <strong>Paquete 2 (180,000₡):</strong> Incluye la cobertura total del evento de graduación, entregando la totalidad de fotografías realizadas en alta resolución. Además de 1 hora previa al evento para fotografías individuales y familiares en recepción.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              <strong>Paquete Premium (50,000₡):</strong> Cobertura completa de 3 horas y 50 fotos editadas, álbum digital incluido.
+              <strong>Paquete 3 (250,000₡):</strong> Incluye la cobertura total del evento de graduación, entregando la totalidad de fotografías realizadas en alta resolución. Además de 1 hora previa al evento para fotografías individuales y familiares en recepción. Este paquete también incluye la producción de un vídeo que recopila los mejores momentos a lo largo del evento(40 segundos a 1 minuto)
             </p>
             <p className="text-lg text-gray-700 mt-4">
               <strong>Nota:</strong> Desplazamiento incluido en Nicoya y Santa Cruz. Otras ubicaciones con costo adicional.

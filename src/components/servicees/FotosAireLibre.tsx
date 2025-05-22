@@ -25,7 +25,7 @@ const FotosAireLibre = () => {
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Fotografía al qire libre: Captura la belleza natural
+              Fotografía al aire libre: Captura la belleza natural
             </h2>
             <p className="text-lg text-gray-700">
               Las sesiones de fotos al aire libre son perfectas para capturar la esencia de la naturaleza 

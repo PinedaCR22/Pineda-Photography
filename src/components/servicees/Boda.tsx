@@ -87,16 +87,16 @@ const Boda = () => {
               Precios y paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
+              <strong>Paquete 1 (100,000₡):</strong> Incluye la cobertura total de la ceremonia y recepción de la boda, entregando la totalidad de fotografías realizadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
+              <strong>Paquete 2 (180,000₡):</strong> Incluye la cobertura total de la ceremonia y recepción de la boda, entregando la totalidad de fotografías realizadas en alta resolución. Además de una sesión de 10 fotografías con los esposos y la cobertura completa de la preparación de los novios.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+              <strong>Paquete 3 (250,000₡):</strong> Incluye la cobertura total de la ceremonia y recepción de la boda, entregando la totalidad de fotografías realizadas en alta resolución. Además de una sesión de 10 fotografías con los esposos y la cobertura completa de la preparación de los novios. Este paquete también incluye un video editado recopilando los mejores momentos de la boda(40 segundos a 1 minuto)
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
+              <strong>Nota:</strong> Desplazamiento incluido en Nicoya y Santa Cruz. Otras ubicaciones con costo adicional.
             </p>
           </div>
         </div>

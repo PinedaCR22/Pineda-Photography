@@ -83,7 +83,7 @@ const Reels = () => {
         {/* Card 3 - Backstage de una gala final de Miss Universe */}
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Backstage de una gala final de Miss Universe
+            Detrás de cámara a una grabación de Miss Costa Rica
           </h2>
           <div className="relative w-full h-64 bg-black flex items-center justify-center">
             <img
@@ -104,9 +104,7 @@ const Reels = () => {
             </div>
           </div>
           <p className="text-lg text-gray-700 mt-4">
-            Un pequeño vistazo a lo que sucede detrás de cámaras en una gala final de Miss Universe, 
-            desde la preparación de las candidatas hasta los momentos más emocionantes del evento, 
-            además de un vistazo a la rutina del equipo.
+            Conozca un poco sobre el detrás de cámara que realizamos a Daniela Pérez, candidata a Miss Costa Rica 2025. Este reel muestra la riqueza cultural de Guanacast, donde realizamos un recorrido por los 11 cantones de la provincia.
           </p>
         </div>
       </div>
