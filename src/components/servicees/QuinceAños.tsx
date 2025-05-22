@@ -86,16 +86,16 @@ const QuinceAnios = () => {
               Precios y Paquetes
             </h2>
             <p className="text-lg text-gray-700">
-              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
+              <strong>Paquete 1 (80,000₡):</strong> Incluye la cobertura total del evento, entregando la totalidad de fotografías realizadas en alta resolución.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
+              <strong>Paquete 2 (100,000₡):</strong> Incluye la cobertura total del evento, entregando la totalidad de fotografías realizadas en alta resolución. Además de una sesión previa de 15 fotografías a la quinceañera.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+              <strong>Paquete 3 (180,000₡):</strong> Incluye la cobertura total del evento, entregando la totalidad de fotografías realizadas en alta resolución. Además de una sesión previa de 15 fotografías con pareja. Este paquete también incluye un video editado recopilando los mejores momentos del 15 años(40 segundos a 1 minuto)
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              <strong>Nota:</strong> Estos precios aplican para las ciudades de Santa Cruz o Nicoya, sin embargo por un precio adicional podemos coordinar la ubicación de interés del cliente para las fotografías.
+              <strong>Nota:</strong> Desplazamiento incluido en Nicoya y Santa Cruz. Otras ubicaciones con costo adicional.
             </p>
           </div>
         </div>

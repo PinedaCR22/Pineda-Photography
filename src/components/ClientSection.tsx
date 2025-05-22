@@ -134,10 +134,10 @@ const ClientSection = () => {
               />
               <h3 className="text-xl font-semibold text-gray-900">Chaves Photography</h3>
               <p className="text-gray-700 text-sm mt-2">
-                "
+                
                 Ofrece una visión artística y profesional en fotografía de eventos, 
                 su enfoque busca resaltar la emoción en cada imagen, 
-                inmortalizando recuerdos con un estilo único y creativo."
+                inmortalizando recuerdos con un estilo único y creativo.
               </p>
               <a
                 href="https://www.instagram.com/chaves_photography_?igsh=MXdyaTdwNjB4aWRhMA=="
@@ -158,9 +158,9 @@ const ClientSection = () => {
               />
               <h3 className="text-xl font-semibold text-gray-900">Skyscape Adventure</h3>
               <p className="text-gray-700 text-sm mt-2">
-                "
+                
                 Captura paisajes impresionantes, aventuras extremas y experiencias inolvidables desde las alturas, 
-                mostrando la belleza del mundo desde una nueva perspectiva."
+                mostrando la belleza del mundo desde una nueva perspectiva.
               </p>
               <a
                 href="https://skyscape-indol.vercel.app/"

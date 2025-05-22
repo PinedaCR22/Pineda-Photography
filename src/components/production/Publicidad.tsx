@@ -53,7 +53,7 @@ const Publicidad = () => {
         {/* Card 2 */}
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            La historia de Rochita, interpretado por Elizabeth Cabalceta
+            La historia de Rochita, interpretada por Elizabeth Cabalceta
           </h2>
           <div className="relative w-full h-64 bg-black flex items-center justify-center">
             <img 
