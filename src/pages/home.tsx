@@ -13,8 +13,10 @@ const Home = () => {
       {/* Espacio entre secciones */}
       <div className="h-12"></div>
 
-      {/* Sección "Quiénes Somos" */}
-      <AboutUs />
+      {/* Sección "Quiénes Somos" con ID para el scroll */}
+      <div id="seccion-siguiente">
+        <AboutUs />
+      </div>
 
       {/* Espacio entre secciones */}
       <div className="h-12"></div>
@@ -22,13 +24,11 @@ const Home = () => {
       {/* Carrusel de Fotografías */}
       <PhotoCarousel />
 
-      {/* Espacio entre secciones */}
       <div className="h-12"></div>
 
       {/* Sección "Clientes con los que hemos trabajado" */}
       <ClientSection />
 
-      {/* Espacio entre secciones */}
       <div className="h-12"></div>
 
       {/* Sección "Logros Audiovisuales" */}

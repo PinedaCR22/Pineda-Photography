@@ -22,7 +22,7 @@ const achievements = [
   },
 ];
 
-const FlipCard = ({ title, image, description }: any) => {
+const FlipCard = ({ title, image, description, delay }: any) => {
   const [flipped, setFlipped] = useState(false);
 
   const flipVariants = {
@@ -31,7 +31,13 @@ const FlipCard = ({ title, image, description }: any) => {
   };
 
   return (
-    <div className="w-full h-96 perspective">
+    <motion.div
+      className="w-full h-96 perspective"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay }}
+      viewport={{ once: true }}
+    >
       <motion.div
         className="relative w-full h-full"
         style={{ transformStyle: "preserve-3d" }}
@@ -66,16 +72,22 @@ const FlipCard = ({ title, image, description }: any) => {
           </button>
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
 const LogrosSection = () => {
   return (
     <div className="bg-gray-50 text-gray-900 py-16 lg:py-10 xl:py-6 px-8">
-      <h1 className="text-4xl font-bold text-center mb-12">
-      ¡Nuestros Logros!
-      </h1>
+      <motion.h1
+        className="text-4xl font-bold text-center mb-12"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        ¡Nuestros Logros!
+      </motion.h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {achievements.map((item, index) => (
@@ -84,6 +96,7 @@ const LogrosSection = () => {
             title={item.title}
             image={item.image}
             description={item.description}
+            delay={index * 0.2}
           />
         ))}
       </div>
