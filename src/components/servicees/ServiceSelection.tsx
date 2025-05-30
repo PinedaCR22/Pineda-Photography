@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ServiceSelection = () => {
   const navigate = useNavigate();
 
-  // Servicios organizados por categorías
   const serviceCategories = [
     {
       title: "Eventos",
@@ -34,7 +34,7 @@ const ServiceSelection = () => {
 
   return (
     <div className="relative w-full min-h-screen flex flex-col justify-center items-center pt-16">
-      {/* Imagen de fondo usando PORTADA.jpg */}
+      {/* Fondo desenfocado */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
@@ -44,24 +44,38 @@ const ServiceSelection = () => {
         }}
       ></div>
 
-      {/* Contenedor de servicios con fondo opaco */}
-      <div className="relative z-10 bg-white bg-opacity-95 p-8 rounded-lg shadow-lg w-11/12 max-w-4xl text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">
+      {/* Contenedor con animación */}
+      <motion.div
+        className="relative z-10 bg-white bg-opacity-95 p-8 rounded-lg shadow-lg w-11/12 max-w-4xl text-center"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
+        {/* Título principal animado */}
+        <motion.h2
+          className="text-3xl font-bold text-gray-900 mb-8"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
           Seleccione su servicio de interés (INFORMACIÓN GENÉRICA)
-        </h2>
+        </motion.h2>
 
-        {/* Renderizado de cada categoría */}
+        {/* Categorías */}
         {serviceCategories.map((category, categoryIndex) => (
-          <div key={categoryIndex} className="mb-8">
-            {/* Título de la categoría */}
+          <motion.div
+            key={categoryIndex}
+            className="mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: categoryIndex * 0.3, duration: 0.5 }}
+          >
             <h3 className="text-2xl font-semibold text-gray-800 mb-3">
               {category.title}
             </h3>
-
-            {/* Línea divisoria */}
             <div className="w-32 h-1 bg-yellow-600 mx-auto mb-4"></div>
 
-            {/* Contenedor de botones */}
             <div
               className={`${
                 category.title === "Sesiones"
@@ -70,23 +84,23 @@ const ServiceSelection = () => {
               } mb-2`}
             >
               {category.services.map((service, serviceIndex) => (
-                <button
+                <motion.button
                   key={serviceIndex}
-                  className="bg-yellow-600 text-white text-lg font-semibold py-3 px-4 rounded-lg shadow-md transition duration-300 transform hover:scale-105 hover:bg-black hover:border-2 hover:border-yellow-400"
+                  className="bg-yellow-600 text-white text-lg font-semibold py-3 px-4 rounded-lg shadow-md hover:bg-black hover:border-2 hover:border-yellow-400 transition duration-300"
                   onClick={() => navigate(service.path)}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 + serviceIndex * 0.1 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.98 }}
                 >
                   {service.name}
-                </button>
+                </motion.button>
               ))}
             </div>
-
-            {/* Margen inferior para separar categorías, excepto en la última */}
-            {categoryIndex < serviceCategories.length - 1 && (
-              <div className="mt-8"></div>
-            )}
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
