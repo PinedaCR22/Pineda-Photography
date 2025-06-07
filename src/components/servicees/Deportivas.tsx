@@ -1,3 +1,5 @@
+// src/components/FotosDeportivas.tsx
+import { motion } from "framer-motion";
 import Navbar from "../../layout/Navbar";
 
 const FotosDeportivas = () => {
@@ -7,102 +9,190 @@ const FotosDeportivas = () => {
       <Navbar />
 
       {/* Espacio entre el navbar y el contenido */}
-      <div className="h-20"></div>
+      <div className="h-24" />
 
-      {/* Contenido de la página */}
-      <div className="w-full flex flex-col items-center py-16 px-8">
-        
+      {/* Contenedor principal con animación de aparición */}
+      <motion.div
+        className="w-full flex flex-col items-center py-16 px-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         {/* Card 1 - Introducción */}
-        <div className="w-full flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6">
+        <motion.div
+          className="w-full flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           {/* Imagen a la izquierda */}
           <div className="w-full md:w-1/2 flex justify-center">
-            <img 
-              src="/images/deportivas-intro.jpg" 
-              alt="Fotografía Deportiva: Captura la Intensidad del Momento" 
+            <img
+              src="/images/servicios/dp1.jpg"
+              alt="Fotografía Deportiva: Captura la Intensidad del Momento"
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
           {/* Texto a la derecha */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <motion.h2
+              className="text-3xl font-bold text-gray-900 mb-4"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               Fotografía Deportiva: Captura la intensidad del momento
-            </h2>
-            <p className="text-lg text-gray-700">
-              En la fotografía deportiva, cada fracción de segundo cuenta. 
-              Nos especializamos en capturar la acción en su máximo esplendor, 
+            </motion.h2>
+            <motion.p
+              className="text-lg text-gray-700"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              En la fotografía deportiva, cada fracción de segundo cuenta.
+              Nos especializamos en capturar la acción en su máximo esplendor,
               inmortalizando la velocidad, la emoción y la determinación de cada deportista.
-            </p>
-            <p className="text-lg text-gray-700 mt-4">
-              Ya sea en un partido, una competencia o un entrenamiento, 
-              nuestro equipo está preparado para ofrecer imágenes impactantes 
+            </motion.p>
+            <motion.p
+              className="text-lg text-gray-700 mt-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              Ya sea en un partido, una competencia o un entrenamiento,
+              nuestro equipo está preparado para ofrecer imágenes impactantes
               con la mejor calidad y definición.
-            </p>
+            </motion.p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Espaciado entre cards */}
-        <div className="h-10"></div>
+        <div className="h-10" />
 
         {/* Card 2 - ¿Qué incluye nuestro servicio? */}
-        <div className="w-full flex flex-col md:flex-row-reverse items-center bg-white shadow-lg rounded-lg p-6">
+        <motion.div
+          className="w-full flex flex-col md:flex-row-reverse items-center bg-white shadow-lg rounded-lg p-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 1.0 }}
+        >
           {/* Imagen a la derecha */}
           <div className="w-full md:w-1/2 flex justify-center">
-            <img 
-              src="/images/deportivas-incluye.jpg" 
-              alt="¿Qué incluye nuestro servicio?" 
+            <img
+              src="/images/servicios/dp2.jpg"
+              alt="¿Qué incluye nuestro servicio?"
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
           {/* Texto a la izquierda */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <motion.h2
+              className="text-3xl font-bold text-gray-900 mb-4"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+            >
               ¿Qué incluye nuestro servicio?
-            </h2>
-            <p className="text-lg text-gray-700">
-              Nuestro servicio de fotografía deportiva incluye cobertura de eventos completos, 
-              capturas en alta velocidad, edición profesional y entrega digital de las imágenes 
+            </motion.h2>
+            <motion.p
+              className="text-lg text-gray-700"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 1.4 }}
+            >
+              Nuestro servicio de fotografía deportiva incluye cobertura de eventos completos,
+              capturas en alta velocidad, edición profesional y entrega digital de las imágenes
               más impactantes de la jornada.
-            </p>
-            <p className="text-lg text-gray-700 mt-4">
-              Además, contamos con opciones de seguimiento personalizado para equipos, 
+            </motion.p>
+            <motion.p
+              className="text-lg text-gray-700 mt-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 1.6 }}
+            >
+              Además, contamos con opciones de seguimiento personalizado para equipos,
               atletas individuales o torneos completos.
-            </p>
+            </motion.p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Espaciado entre cards */}
-        <div className="h-10"></div>
+        <div className="h-10" />
 
         {/* Card 3 - Precios */}
-        <div className="w-full flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6">
+        <motion.div
+          className="w-full flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 1.8 }}
+        >
           {/* Imagen a la izquierda */}
           <div className="w-full md:w-1/2 flex justify-center">
-            <img 
-              src="/images/deportivas-precios.jpg" 
-              alt="Precios y Paquetes" 
+            <img
+              src="/images/servicios/dp3.jpg"
+              alt="Precios y Paquetes"
               className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
             />
           </div>
-                    {/* Texto a la derecha */}
-                    <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          {/* Texto a la derecha */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-6">
+            <motion.h2
+              className="text-3xl font-bold text-gray-900 mb-4"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 2.0 }}
+            >
               Precios y paquetes
-            </h2>
-            <p className="text-lg text-gray-700">
+            </motion.h2>
+            <motion.p
+              className="text-lg text-gray-700"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 2.2 }}
+            >
               <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
-            </p>
-            <p className="text-lg text-gray-700 mt-4">
+            </motion.p>
+            <motion.p
+              className="text-lg text-gray-700 mt-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 2.4 }}
+            >
               <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
-            </p>
-            <p className="text-lg text-gray-700 mt-4">
+            </motion.p>
+            <motion.p
+              className="text-lg text-gray-700 mt-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 2.6 }}
+            >
               <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
-            </p>
-            <p className="text-lg text-gray-700 mt-4">
+            </motion.p>
+            <motion.p
+              className="text-lg text-gray-700 mt-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 2.8 }}
+            >
               <strong>Nota:</strong> Desplazamiento incluido en Nicoya y Santa Cruz. Otras ubicaciones con costo adicional.
-            </p>
+            </motion.p>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
