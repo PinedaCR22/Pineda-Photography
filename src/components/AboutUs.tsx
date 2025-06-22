@@ -1,6 +1,20 @@
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
-const AboutUs = () => {
+const AboutUs: React.FC = () => {
+  const images = [
+    "/images/QUIENES SOMOS.jpeg",
+    "/images/PORT.jpg",
+  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <motion.div
       className="w-full flex flex-col md:flex-row items-center bg-gray-100 py-16 px-8"
@@ -9,7 +23,7 @@ const AboutUs = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
     >
-      {/* Imagen animada a la izquierda */}
+      {/* Imagen con fade y ratio fijo 2:1 */}
       <motion.div
         className="w-full md:w-1/2 flex justify-center"
         initial={{ opacity: 0, x: -30 }}
@@ -17,11 +31,23 @@ const AboutUs = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <img 
-          src="/images/QUIENES SOMOS.jpeg" 
-          alt="Quiénes Somos" 
-          className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
-        />
+        <div
+          className="w-full max-w-md md:max-w-full overflow-hidden rounded-lg shadow-lg"
+          style={{ aspectRatio: "2 / 1" }}
+        >
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={images[currentIndex]}
+              src={images[currentIndex]}
+              alt={currentIndex === 0 ? "Quiénes Somos" : "Portafolio"}
+              className="w-full h-full object-cover"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.8 }}
+            />
+          </AnimatePresence>
+        </div>
       </motion.div>
 
       {/* Texto animado a la derecha */}
