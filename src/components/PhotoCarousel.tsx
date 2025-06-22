@@ -65,7 +65,7 @@ const PhotoCarousel = () => {
 
   const photos = [
     { id: 1, src: "/images/BODA.jpeg", title: "Bodas" },
-    { id: 2, src: "/images/15 AÑOS.jpeg", title: "15 años" },
+    { id: 2, src: "/images/15 ANNOS.jpeg", title: "15 años" },
     { id: 3, src: "/images/BABY SHOWER.jpeg", title: "Baby shower" },
     { id: 4, src: "/images/AMBIENTE.jpeg", title: "Fotos al aire libre" },
     { id: 5, src: "/images/ESTUDIO.jpeg", title: "Fotos tipo estudio" },
@@ -73,7 +73,7 @@ const PhotoCarousel = () => {
     { id: 7, src: "/images/REINADO.jpeg", title: "Certámenes de belleza" },
     { id: 8, src: "/images/PROPIEDAD.jpeg", title: "Fotografías a propiedades" },
     { id: 9, src: "/images/CENA.jpeg", title: "Cenas de graduación" },
-    { id: 10, src: "/images/GRADUACIÓN.jpeg", title: "Graduaciones" },
+    { id: 10, src: "/images/GRADUACION.jpeg", title: "Graduaciones" },
   ];
 
   const firstCarouselPhotos = photos.slice(0, 5);
