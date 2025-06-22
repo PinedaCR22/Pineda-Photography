@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "../../layout/Navbar";
 
 const Audiovisual = () => {
@@ -8,7 +9,7 @@ const Audiovisual = () => {
       <Navbar />
 
       {/* Espacio entre el navbar y el contenido */}
-      <div className="h-24" /> {/* Aumentado de h-20 a h-24 */}
+      <div className="h-24" />
 
       {/* Sección de título y descripción con animación */}
       <motion.div
@@ -31,10 +32,7 @@ const Audiovisual = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          En Pineda Photography llevamos la producción audiovisual al siguiente nivel, 
-          creando videos con calidad cinematográfica para empresas, artistas y proyectos 
-          creativos. Nos especializamos en la dirección, grabación y edición de contenido 
-          profesional que cautiva y transmite mensajes poderosos.
+          En Pineda Photography llevamos la producción audiovisual al siguiente nivel, creando videos con calidad cinematográfica para empresas, artistas y proyectos creativos. Nos especializamos en la dirección, grabación y edición de contenido profesional que cautiva y transmite mensajes poderosos. Para ofrecerte una cotización exacta ponte en <Link to="/contact" className="font-bold underline">contacto</Link> conmigo.
         </motion.p>
       </motion.div>
 

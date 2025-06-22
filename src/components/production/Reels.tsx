@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "../../layout/Navbar";
 
 const Reels = () => {
@@ -31,9 +32,7 @@ const Reels = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          En Pineda Photography creamos Reels publicitarios con impacto visual para redes sociales. 
-          Perfectos para emprendedores, marcas y negocios que buscan conectar con su audiencia de 
-          manera creativa y rápida.
+          En Pineda Photography creamos Reels publicitarios con impacto visual para redes sociales. Perfectos para emprendedores, marcas y negocios que buscan conectar con su audiencia de manera creativa y rápida. Para ofrecerte una cotización más exacta ponte en <Link to="/contact" className="font-bold underline">contacto</Link> conmigo.
         </motion.p>
       </motion.div>
 
@@ -52,14 +51,14 @@ const Reels = () => {
             img: "/images/producciones/CHIRA.jpg",
             url: "#",
             description:
-              "Acá les compartimos un pequeño vlog de lo que es trabajar en la isla Chira, dentro del corto veremos como es el viaje y como son algunos de los diversos pueblos que tiene la isla Chira y muy poca gente conoce.",
+              "Acá les compartimos un pequeño vlog de lo que es trabajar en la isla Chira, dentro del corto veremos cómo es el viaje y diversos pueblos que tiene la isla Chira, muy pocos conocen este destino.",
           },
           {
             title: "Detrás de cámara a una grabación de Miss Costa Rica",
             img: "/images/producciones/GALAFINAL.jpg",
             url: "#",
             description:
-              "Conozca un poco sobre el detrás de cámara que realizamos a Daniela Pérez, candidata a Miss Costa Rica 2025. Este reel muestra la riqueza cultural de Guanacast, donde realizamos un recorrido por los 11 cantones de la provincia.",
+              "Conozca un poco sobre el detrás de cámara que realizamos a Daniela Pérez, candidata a Miss Costa Rica 2025. Este reel muestra la riqueza cultural de Guanacaste, donde recorremos los 11 cantones de la provincia.",
           },
         ].map((card, index) => (
           <motion.div
