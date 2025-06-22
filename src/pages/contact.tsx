@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
       </div>
 
       {/* Card 3: Métodos de contacto */}
-      +  <motion.div
+        <motion.div
     custom={2}
     variants={cardVariants}
     initial="hidden"
