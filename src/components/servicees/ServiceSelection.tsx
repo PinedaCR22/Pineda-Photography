@@ -58,7 +58,7 @@ const ServiceSelection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          Seleccione su servicio de interés (INFORMACIÓN GENÉRICA)
+          ¡Seleccione su servicio de interés! 
         </motion.h2>
 
         {/* Categorías */}

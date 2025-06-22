@@ -1,7 +1,7 @@
 // components/contact/ContactForm.tsx
 import React, { FormEvent, useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { FaCamera } from 'react-icons/fa';
 
 interface ContactFormProps {
@@ -10,34 +10,50 @@ interface ContactFormProps {
 
 interface FormState {
   name: string;
-  email: string;
+  phone: string;
   message: string;
 }
 
 interface FormErrors {
   name?: string;
-  email?: string;
+  phone?: string;
   message?: string;
   date?: string;
 }
 
 const nameRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
 
+// Variants for modal stagger animation
+const container: Variants = {
+  hidden: { opacity: 0, y: -20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { staggerChildren: 0.1, type: 'spring', stiffness: 200, damping: 20 }
+  }
+};
+
+const item: Variants = {
+  hidden: { opacity: 0, y: -10 },
+  show: { opacity: 1, y: 0 }
+};
+
 const ContactForm: React.FC<ContactFormProps> = ({ selectedDate }) => {
-  const [form, setForm] = useState<FormState>({ name: '', email: '', message: '' });
+  const [form, setForm] = useState<FormState>({ name: '', phone: '', message: '' });
   const [errors, setErrors] = useState<FormErrors>({});
+  const [isLoading, setIsLoading] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  // Validación inmediata al escribir
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID);
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setForm(f => ({ ...f, [name]: value }));
-
-    // Validar solo ese campo
     validateField(name as keyof FormState, value);
   };
 
-  // Validación de campo individual
   const validateField = (field: keyof FormState | 'date', value: any) => {
     setErrors(prev => {
       const errs = { ...prev };
@@ -46,36 +62,34 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedDate }) => {
         else if (!nameRegex.test(value)) errs.name = 'El nombre no puede contener números.';
         else delete errs.name;
       }
-      if (field === 'email') {
-        if (!value.trim()) errs.email = 'El correo es obligatorio.';
-        else if (!value.includes('@')) errs.email = 'El correo debe incluir “@”.';
-        else delete errs.email;
+      if (field === 'phone') {
+        if (!value.trim()) errs.phone = 'El teléfono es obligatorio.';
+        else if (!/^[0-9]+$/.test(value)) errs.phone = 'El teléfono solo puede contener números.';
+        else delete errs.phone;
       }
       if (field === 'message') {
         if (!value.trim()) errs.message = 'El mensaje es obligatorio.';
         else delete errs.message;
       }
       if (field === 'date') {
-        if (!value) errs.date = 'La fecha es obligatoria, seleccione la fecha en el calendario.';
+        if (!value) errs.date = 'La fecha es obligatoria.';
         else delete errs.date;
       }
       return errs;
     });
   };
 
-  // Cada vez que cambie la fecha, validamos ese campo
   useEffect(() => {
     validateField('date', selectedDate);
   }, [selectedDate]);
 
-  // Validar todo antes de enviar
   const validateAll = (): boolean => {
     const newErrors: FormErrors = {};
     if (!form.name.trim()) newErrors.name = 'El nombre es obligatorio.';
     else if (!nameRegex.test(form.name)) newErrors.name = 'El nombre no puede contener números.';
 
-    if (!form.email.trim()) newErrors.email = 'El correo es obligatorio.';
-    else if (!form.email.includes('@')) newErrors.email = 'El correo debe incluir “@”.';
+    if (!form.phone.trim()) newErrors.phone = 'El teléfono es obligatorio.';
+    else if (!/^[0-9]+$/.test(form.phone)) newErrors.phone = 'El teléfono solo puede contener números.';
 
     if (!form.message.trim()) newErrors.message = 'El mensaje es obligatorio.';
 
@@ -89,28 +103,30 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedDate }) => {
     e.preventDefault();
     if (!validateAll()) return;
 
+    setIsLoading(true);
     const templateParams = {
       to_email: 'emmapr2233@gmail.com',
       from_name: form.name,
-      reply_to: form.email,
+      phone: form.phone,
       date: selectedDate!.toLocaleDateString(),
-      message: form.message
+      message: form.message,
     };
 
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID as string,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string,
-        templateParams,
-        import.meta.env.VITE_EMAILJS_USER_ID as string
+        templateParams
       )
       .then(() => {
+        setIsLoading(false);
         setShowSuccess(true);
-        setForm({ name: '', email: '', message: '' });
+        setForm({ name: '', phone: '', message: '' });
         setErrors({});
       })
       .catch(err => {
-        console.error(err);
+        console.error('EmailJS Error:', err);
+        setIsLoading(false);
         setErrors({ message: 'Error al enviar. Intenta más tarde.' });
       });
   };
@@ -137,19 +153,19 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedDate }) => {
           {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
         </div>
 
-        {/* Email */}
+        {/* Teléfono */}
         <div>
           <input
-            name="email"
+            name="phone"
             type="text"
-            value={form.email}
+            value={form.phone}
             onChange={handleChange}
-            placeholder="Correo electrónico"
+            placeholder="Número de teléfono"
             className={`w-full px-3 py-2 border rounded focus:outline-none focus:ring ${
-              errors.email ? 'border-red-500' : 'border-gray-300'
+              errors.phone ? 'border-red-500' : 'border-gray-300'
             }`}
           />
-          {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+          {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
         </div>
 
         {/* Fecha */}
@@ -184,38 +200,56 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedDate }) => {
 
         <button
           type="submit"
-          className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
+          className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700 transition flex justify-center items-center"
+          disabled={isLoading}
         >
-          Enviar
+          {isLoading ? (
+            <motion.div
+              className="h-5 w-5 border-2 border-t-2 border-white rounded-full"
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, ease: 'linear', duration: 1 }}
+            />
+          ) : (
+            'Enviar'
+          )}
         </button>
       </form>
 
-      {/* Modal con fondo borroso */}
+      {/* Modal con fondo difuminado y semitransparente */}
       <AnimatePresence>
         {showSuccess && (
           <motion.div
-            className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50"
+            className="fixed inset-0 backdrop-blur-md bg-black/30 flex items-center justify-center z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white rounded-lg p-8 max-w-sm w-full text-center shadow-lg"
-              initial={{ scale: 0.8, y: -20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.8, opacity: 0 }}
+              variants={container}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl"
             >
-              <FaCamera size={48} className="mx-auto text-yellow-500 mb-4" />
-              <h3 className="text-2xl font-bold mb-2">¡Enviado con éxito!</h3>
-              <p className="text-gray-700 mb-6">
+              <motion.div variants={item} className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaCamera size={32} className="text-white" />
+              </motion.div>
+
+              <motion.h3 variants={item} className="text-3xl font-extrabold mb-2">
+                ¡Enviado con éxito!
+              </motion.h3>
+
+              <motion.p variants={item} className="text-gray-600 mb-6">
                 Gracias por agendar tu cita. Te contactaré pronto.
-              </p>
-              <button
+              </motion.p>
+
+              <motion.button
+                variants={item}
                 onClick={() => setShowSuccess(false)}
-                className="px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition"
+                className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-lg shadow-md transition"
               >
                 ¡Genial!
-              </button>
+              </motion.button>
             </motion.div>
           </motion.div>
         )}

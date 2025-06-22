@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "../../layout/Navbar";
 
 const Turistico = () => {
@@ -31,8 +32,7 @@ const Turistico = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          En Pineda Photography capturamos la esencia de cada destino con videos turísticos.
-          Desde paisajes exóticos hasta experiencias culturales, convertimos cada viaje en una producción visual inolvidable.
+          En Pineda Photography capturamos la esencia de cada destino con videos turísticos. Desde paisajes exóticos hasta experiencias culturales, convertimos cada viaje en una producción visual inolvidable. Para ofrecerte una mejor cotización ponte en <Link to="/contact" className="font-bold underline">contacto</Link> conmigo.
         </motion.p>
       </motion.div>
 

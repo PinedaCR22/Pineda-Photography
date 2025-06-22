@@ -49,22 +49,16 @@ const PhotoCarousel = () => {
     pauseOnFocus: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />, 
+    prevArrow: <SamplePrevArrow />, 
     responsive: [
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
     ],
   };
@@ -82,7 +76,6 @@ const PhotoCarousel = () => {
     { id: 10, src: "/images/GRADUACIÓN.jpeg", title: "Graduaciones" },
   ];
 
-  // Dividir las fotos en dos grupos de 5
   const firstCarouselPhotos = photos.slice(0, 5);
   const secondCarouselPhotos = photos.slice(5, 10);
 
@@ -92,13 +85,17 @@ const PhotoCarousel = () => {
         <p className="text-2xl sm:text-3xl font-semibold text-center mb-6">
           Parte de nuestros trabajos en fotografía
         </p>
-        
-        {/* Primer Carrusel - Se mueve a la derecha */}
+
+        {/* Primer Carrusel */}
         <Slider {...settings}>
           {firstCarouselPhotos.map((photo) => (
             <div key={photo.id} className="p-2">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src={photo.src} alt={photo.title} className="h-72 w-full object-cover" />
+                <img
+                  src={photo.src}
+                  alt={photo.title}
+                  className="h-72 w-full object-cover object-top"
+                />
                 <div className="p-4 text-center">
                   <p className="text-lg font-semibold">{photo.title}</p>
                 </div>
@@ -109,12 +106,16 @@ const PhotoCarousel = () => {
 
         <div className="my-8" />
 
-        {/* Segundo Carrusel - Se mueve a la izquierda */}
+        {/* Segundo Carrusel */}
         <Slider {...settings} rtl={true}>
           {secondCarouselPhotos.map((photo) => (
             <div key={photo.id} className="p-2">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src={photo.src} alt={photo.title} className="h-72 w-full object-cover" />
+                <img
+                  src={photo.src}
+                  alt={photo.title}
+                  className="h-72 w-full object-cover object-top"
+                />
                 <div className="p-4 text-center">
                   <p className="text-lg font-semibold">{photo.title}</p>
                 </div>

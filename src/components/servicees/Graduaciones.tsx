@@ -1,4 +1,3 @@
-// src/components/Graduaciones.tsx
 import { motion } from "framer-motion";
 import Navbar from "../../layout/Navbar";
 
@@ -31,7 +30,7 @@ const Graduaciones = () => {
             <img
               src="/images/servicios/gr1.jpg"
               alt="Inmortaliza tu Gran Logro"
-              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
+              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg object-cover object-top max-h-80 md:max-h-[500px]"
             />
           </div>
           {/* Texto a la derecha */}
@@ -52,9 +51,7 @@ const Graduaciones = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              La graduación es un momento único que marca el inicio de una nueva etapa.
-              En Pineda Photography nos aseguramos de capturar cada detalle de este día especial,
-              para que tengas recuerdos inolvidables que reflejen tu esfuerzo y dedicación.
+              La graduación es un momento único que marca el inicio de una nueva etapa. En Pineda Photography nos aseguramos de capturar cada detalle de este día especial, para que tengas recuerdos inolvidables que reflejen tu esfuerzo y dedicación.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -63,8 +60,7 @@ const Graduaciones = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              Ya sea una sesión individual o en grupo, nuestro enfoque profesional garantiza fotografías llenas de
-              emoción, orgullo y alegría.
+              Ya sea una sesión individual, grupal o cobertura completa de graduación, nuestro enfoque profesional garantiza fotografías llenas de emoción, orgullo y alegría.
             </motion.p>
           </div>
         </motion.div>
@@ -85,7 +81,7 @@ const Graduaciones = () => {
             <img
               src="/images/servicios/gr2.jpg"
               alt="¿Qué incluye nuestro servicio?"
-              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
+              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg object-cover object-top max-h-80 md:max-h-[500px]"
             />
           </div>
           {/* Texto a la izquierda */}
@@ -106,8 +102,7 @@ const Graduaciones = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 1.4 }}
             >
-              Nuestro servicio de fotografía para graduaciones incluye sesiones individuales o en grupo,
-              cobertura del evento de entrega de diplomas, fotografías espontáneas y retratos formales.
+              Nuestro servicio de fotografía para graduaciones incluye sesiones individuales o en grupo, cobertura del evento de entrega de diplomas, fotografías espontáneas y retratos formales.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -116,8 +111,7 @@ const Graduaciones = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 1.6 }}
             >
-              Además, ofrecemos asesoramiento en poses y locaciones, asegurando imágenes elegantes y profesionales
-              que puedas compartir con orgullo en tus redes sociales y álbumes familiares.
+              Además, ofrecemos asesoramiento en poses y locaciones, asegurando imágenes elegantes y profesionales que puedas compartir con orgullo en tus redes sociales y álbumes familiares.
             </motion.p>
           </div>
         </motion.div>
@@ -138,7 +132,7 @@ const Graduaciones = () => {
             <img
               src="/images/servicios/gr3.jpg"
               alt="Precios y Paquetes"
-              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg"
+              className="w-full max-w-md md:max-w-full rounded-lg shadow-lg object-cover object-top max-h-80 md:max-h-[500px]"
             />
           </div>
           {/* Texto a la derecha */}
@@ -159,7 +153,7 @@ const Graduaciones = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.2 }}
             >
-              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
+              <strong>Paquete individual (25,000₡ cuota mínima):</strong> Este paquete aplica para cierta cantidad de estudiantes los cuales estén interesados en tener fotografías de su graduación (5 estudiantes mínimo), esto incluye 5 fotografías de cada uno en distintos momentos de la graduación.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -168,7 +162,7 @@ const Graduaciones = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.4 }}
             >
-              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
+              <strong>Paquete grupal (100,000₡ cuota mínima):</strong> Aplica para grupos de mínimo 20 estudiantes, esto incluye 5 fotografías de cada uno en distintos momentos de la graduación.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -177,7 +171,7 @@ const Graduaciones = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.6 }}
             >
-              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+              <strong>Paquete 3 (200,000₡ cuota mínima):</strong> Aplica para la cobertura de fotografías de la graduación con varios grupos o secciones, esto incluye 5 fotografías de cada uno en distintos momentos de la graduación, la cuota individual por estudiante es de 5 mil.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"

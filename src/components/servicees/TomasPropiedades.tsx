@@ -106,8 +106,8 @@ const TomasPropiedades = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 1.4 }}
             >
-              Nuestro servicio de fotografía inmobiliaria incluye imágenes de alta calidad para interiores y exteriores,
-              fotografía aérea con drones y edición profesional para realzar los detalles clave de la propiedad.
+              Nuestro servicio de fotografía inmobiliaria incluye tanto imágenes como vídeos de alta calidad para interiores y exteriores,
+              fotografía y producciones aéreas con drones y edición profesional para realzar los detalles clave de la propiedad.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -159,7 +159,7 @@ const TomasPropiedades = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.2 }}
             >
-              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
+              <strong>Paquete 1 (40,000₡):</strong> Incluye 1 hora de sesión fotográfica con 10 fotografías a la propiedad realizadas con drone.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -168,7 +168,7 @@ const TomasPropiedades = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.4 }}
             >
-              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
+              <strong>Paquete 2 (80,000₡):</strong> Incluye 2 horas de sesión fotográfica con 10 fotografías a la propiedad realizadas con drone y un cortometraje a la propiedad con duración de máximo 40 segundos.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -177,7 +177,7 @@ const TomasPropiedades = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.6 }}
             >
-              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+              <strong>Paquete 3 (100,000₡):</strong> Incluye 3 horas de sesión fotográfica con 20 fotografías a la propiedad realizadas con drone y un cortometraje a la propiedad con una duración entre 40 segundos y 2 minutos.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"

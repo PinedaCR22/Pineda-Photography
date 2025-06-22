@@ -36,7 +36,7 @@ const ProductionSelection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          Seleccione el tipo de producción de interés
+          ¡Seleccione el tipo de producción de interés!
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Navbar from "../../layout/Navbar";
 
 const Publicidad = () => {
@@ -31,8 +32,7 @@ const Publicidad = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          En Pineda Photography creamos producciones publicitarias impactantes para potenciar 
-          la identidad de tu marca y atraer a tu audiencia con contenido audiovisual de alta calidad.
+          En Pineda Photography creamos producciones publicitarias impactantes para potenciar la identidad de tu marca y atraer a tu audiencia con contenido audiovisual de alta calidad. Para obtener una cotización más exacta, ponte en <Link to="/contact" className="font-bold underline">contacto</Link> conmigo.
         </motion.p>
       </motion.div>
 

@@ -54,7 +54,8 @@ const FotosDeportivas = () => {
             >
               En la fotografía deportiva, cada fracción de segundo cuenta.
               Nos especializamos en capturar la acción en su máximo esplendor,
-              inmortalizando la velocidad, la emoción y la determinación de cada deportista.
+              inmortalizando la velocidad, la emoción y la determinación de cada deportista. 
+              Aplica para cualquier área deportiva o artística.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -161,7 +162,7 @@ const FotosDeportivas = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.2 }}
             >
-              <strong>Paquete 1 (15,000₡):</strong> Incluye 1 hora de sesión fotográfica y 15 fotografías editadas en alta resolución.
+              <strong>Paquete 1, cobertura individual (25,000₡):</strong> Incluye la cobertura de fotografías a una persona en eventos de máxima duración de 2 horas, la totalidad de fotografías realizadas son entregadas al cliente.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -170,7 +171,7 @@ const FotosDeportivas = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.4 }}
             >
-              <strong>Paquete 2 (25,000₡):</strong> Incluye 2 horas de sesión fotográfica y 25 fotografías editadas en alta resolución.
+              <strong>Paquete 2, cobertura grupal (60,000₡):</strong> Incluye la cobertura de fotografías a un grupo de atletas, artístas etc.., en evento de máxima duración de 2 horas, la totalidad de fotografías realizadas son entregadas al cliente.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
@@ -179,7 +180,7 @@ const FotosDeportivas = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 2.6 }}
             >
-              <strong>Paquete 3 (30,000₡):</strong> Incluye 1 hora de sesión fotográfica y 40 fotografías editadas en alta resolución.
+              <strong>Paquete 3 (80,000₡):</strong> Incluye la cobertura de fotografías completa a un evento deportivo o artístico, en evento de máxima duración de 3 horas, la totalidad de fotografías realizadas son entregadas al cliente.
             </motion.p>
             <motion.p
               className="text-lg text-gray-700 mt-4"
