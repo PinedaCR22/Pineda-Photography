@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 import ContactForm from '../components/contact/ContactForm';
 import ContactMethods from '../components/contact/ContactMethods';

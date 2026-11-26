@@ -32,7 +32,7 @@ export const Calendar: React.FC<CalendarProps> = ({
         inline
         locale="es"
         selected={tempDate}
-        onChange={date => setTempDate(date)}
+        onChange={(date: Date | null) => setTempDate(date)}
         minDate={new Date()}                
         calendarClassName="bg-white border border-gray-200 rounded-lg shadow-lg w-full p-3"
         renderCustomHeader={({

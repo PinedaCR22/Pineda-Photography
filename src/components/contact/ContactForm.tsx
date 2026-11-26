@@ -1,7 +1,7 @@
 // components/contact/ContactForm.tsx
 import React, { FormEvent, useState, useEffect } from 'react';
-import emailjs from 'emailjs-com';
-import { motion, AnimatePresence, Variants } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+import { motion, AnimatePresence, Variants } from 'motion/react';
 import { FaCamera } from 'react-icons/fa';
 
 interface ContactFormProps {
@@ -124,7 +124,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedDate }) => {
         setForm({ name: '', phone: '', message: '' });
         setErrors({});
       })
-      .catch(err => {
+      .catch((err: unknown) => {
         console.error('EmailJS Error:', err);
         setIsLoading(false);
         setErrors({ message: 'Error al enviar. Intenta más tarde.' });

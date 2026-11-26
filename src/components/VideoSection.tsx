@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FaArrowDown } from "react-icons/fa"; // Flecha completa hacia abajo
 
 const VideoSection = () => {
