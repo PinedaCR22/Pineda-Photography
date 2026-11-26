@@ -1,5 +1,5 @@
 // src/components/QuinceAnios.tsx
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Navbar from "../../layout/Navbar";
 
 const QuinceAnios = () => {

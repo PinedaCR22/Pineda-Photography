@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
-import Slider from "react-slick";
+import SlickSlider from "react-slick";
 import { FaCamera, FaPhotoVideo, FaCalendarAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// Vite 8 + react-slick (CommonJS): a veces llega el módulo entero en vez del componente
+const Slider = (SlickSlider as unknown as { default?: typeof SlickSlider }).default ?? SlickSlider;
 
 const ClientSection = () => {
   const fadeInUp = {
