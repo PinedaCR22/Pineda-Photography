@@ -47,7 +47,7 @@ const Navbar = () => {
             className="h-10 w-10 md:h-16 md:w-16 lg:h-20 lg:w-20 object-contain"
           />
           <h1 className="text-sm sm:text-lg md:text-2xl lg:text-3xl font-bold tracking-wide ml-2 md:ml-4">
-            Pineda Photography
+            Pineda Photographyyyyyyyyyyy
           </h1>
         </div>
 
